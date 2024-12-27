@@ -1,0 +1,13 @@
+– Skupen čas vstavljanja 100000 elementov v glavo seznama: 37 488μs
+– Skupen čas vstavljanja 100000 vrednosti na prvo mesto v polje: 42 188 800μs
+– Skupen čas vstavljanja 100000 vrednosti na konec polja: 403μs
+– Skupen čas izračuna vsote 100000 elementov iz seznama: 6534μs
+– Skupen čas izračuna vsote 100000 vrednosti iz polja: 381μs
+
+Pod pogojem, da vstavljemo nove vrednosti na konec podatkovne strukture, je najboljša izbira 
+polje, saj se to opravi hitreje kot v seznamu. Če pa vstavljamo nove vrednosti na prvo mesto 
+strukture, je seznam veliko boljša izbira, saj to opravi mnogo hitreje 
+(na mojem računalniku nekje 1125-krat hitreje). 
+
+"Sprehod" (branje in premikanje skozi strukturo) skozi polje je hitrejši kot skozi povezan seznam, zato
+je delo z že ustvarjenim poljem mnogo hitrejše.
